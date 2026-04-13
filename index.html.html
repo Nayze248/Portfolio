@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Gabriel Bodet-Denis - Portfolio</title>
+  <link rel="icon" type="image/png" href="C:\Users\gabri\OneDrive\Bureau\Portfolio\images\Designer.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+
+    </head>
+<!--Header-->
+
+        <header>
+            <h1>Gabriel BODET-DENIS</h1>
+                <p>Technicien Systèmes et Réseaux</p>
+        </header>
+
+<!-- Body -->
+
+<body>
+    <nav>
+                        <ul class="nav-links">
+                            <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                            <li><a href="#formations" class="nav-link active">Formations</a></li>
+                            <li><a href="#experiences" class="nav-link active">Expériences</a></li>
+                            <li><a href="#certifications" class="nav-link active">Certifications</a></li>
+                            <li><a href="#competences" class="nav-link active">Compétences</a></li>
+                            <li><a href="#projet" class="nav-link active">Projets</a></li>
+                        </ul> 
+    </nav>
+
+    <main>
+                        <h2 id="BVN">Bienvenue sur mon Portfolio !</h2>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ACCUEIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        
+                        <section id="accueil">
+                            <h4 id="s1">Accueil</h4>
+                            <section class="about-section">
+                                <div class="container">
+                                    <div class="about-image">
+                                        <img src="images/moi.JPEG" alt="Portrait de Gabriel BODET-DENIS">
+                                    </div>
+
+                                    <div class="about-content">
+                                        <h2>Qui suis-je ?</h2>
+                                        <p>Bonjour ! Je suis Gabriel BODET-DENIS, un passionné d'Informatique basé à Savenay (44).</p>
+                                        <p>J'aime m'occuper de l'administration des réseaux et également de la gestion de parc. Quand je ne suis pas derrière mon ordinateur, vous me trouverez sûrement dans une salle à jouer au basket ou à arbitrer des matchs de basket.</p>
+                                        
+                                        <h3>Mes Centres d'Intérêt :</h3>
+                                        <ul class="interests">
+                                            <li>💻 Informatique (Réseau)</li>
+                                            <li>🏀 Joueur de Basket-Ball (14 ans de pratique)</li>
+                                            <li>📢 Arbitre Officiel de Basket-Ball (4 ans de pratique)</li>
+                                        </ul>
+
+                                        <div class="cv-container">
+                                            <a href="pdf/CV.pdf" class="btn-cv" target="_blank">
+                                                 Télécharger mon CV
+                                            </a>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ACCUEIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FORMATIONS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                        <section id="formations">
+                            <h2 id="s1">Formations</h2>
+                            <div class="timeline-container">
+                            <div class="timeline">
+                                
+                                <div class="timeline-item">
+                                <div class="diploma-card">
+                                    <div class="diploma-photo">
+                                    <img src="images/bac.jpg" alt="bac">
+                                    </div>
+                                    <div class="diploma-info">
+                                    <h3>Baccalauréat Général</h3>
+                                    <p class="school">Lycée Jacques Prévert (Savenay 44)</p>
+                                    <p class="year">2022-2023</p>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                <div class="diploma-card">
+                                    <div class="diploma-photo">
+                                    <img src="images/bts.jpg" alt="BTS SIO option SISR">
+                                    </div>
+                                    <div class="diploma-info">
+                                    <h3>BTS SIO option SISR</h3>
+                                    <p class="school">Institut d'Informatique Appliquée (Saint Nazaire 44)</p>
+                                    <p class="year">2023-2025</p>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                <div class="diploma-card">
+                                    <div class="diploma-photo">
+                                    <img src="images/autre.png" alt="Diplôme 3">
+                                    </div>
+                                    <div class="diploma-info">
+                                    <h3>Formation - ASR</h3>
+                                    <p class="school">ENI (Saint Herblain 44)</p>
+                                    <p class="year">2026-2028</p>
+                                    </div>
+                                </div>
+                                </div>
+
+                            </div>
+                            </div>
+
+
+                        </section>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FORMATIONS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EXPERIENCES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                        <section id="experiences">
+    <h2 id="s1">Expériences</h2>
+    <div class="timeline-container">
+        <div class="timeline-middle-line"></div>
+
+        <div class="timeline-row gauche">
+            <div class="experience-card" onclick="openModal('missions-1')">
+                <div class="info-secteur">
+                    <span class="date">Septembre 2023 - Août 2025</span>
+                    <h3>Technicien Support Helpdesk</h3>
+                    <h4>U TECH (Alternant)</h4>
+                    <p class="hint">Cliquez pour voir les missions</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-row droite">
+            <div class="experience-card" onclick="openModal('missions-2')">
+                <div class="info-secteur">
+                    <span class="date">Octobre 2025 - Décembre 2025</span>
+                    <h3>Technicien Support Helpdesk</h3>
+                    <h4>TIBCO (Intérimaire)</h4>
+                    <p class="hint">Cliquez pour voir les missions</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-row gauche">
+            <div class="experience-card" onclick="openModal('missions-3')">
+                <div class="info-secteur">
+                    <span class="date">Février 2026 - Août 2026</span>
+                    <h3>Technicien de Masterisation</h3>
+                    <h4>TIBCO (Intérimaire)</h4>
+                    <p class="hint">Cliquez pour voir les missions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-text"></div>
+        </div>
+    </div>
+
+    <div id="missions-1" style="display:none;">
+        <h3>Missions :</h3>
+            <ul>
+                <li>- Gérer les appels entrants et sortants vers les points de vente U ( Hyper U / Super U / Utile / U Express)</li>
+                <li>- Rédiger et résoudre des incidents et requêtes de niveau 1</li>
+                <li>- Assister les utilisateurs sur la partie poste de travail et périphérique</li>
+                 <li>- Mettre à jour les documentations de l'assistance</li>
+                <li>- Élaborer la documentation à destination des utilisateurs (tutos vidéos)</li>
+                <li>- Installer des logiciels : Applications Métiers / Outils / Logiciels Prestataire</li>
+                <li>- Paramétrer le Matériel (Terminal Mobile / Imprimante / Ordinateur)</li>
+            </ul>
+    </div>
+
+    <div id="missions-2" style="display:none;">
+        <h3>Missions :</h3>
+        <ul>
+            <li>- Gérer les appels entrants et sortants des concessions automobiles (Emil Frey France)</li>
+            <li>- Rédiger et résoudre des incidents et demandes de niveau 1</li>
+            <li>- Déverrouiller les sessions Windows</li>
+            <li>- Réinitialiser les mots de passe de session Windows</li>
+            <li>- Ajouter et Supprimer des utilisateurs d'une BAL partagée</li>
+            <li>- Récupérer et donner les clés de récupération de Bitlocker</li>
+            <li>- Attribuer des badges d'imprimantes</li>
+            <li>- Installer des imprimantes sur les postes</li>
+            <li>- Installer des logiciels (Citrix / MyIstra / Mecaplanning / TeamViewer)</li>
+            <li>- Ajouter et Supprimer des licences Office365</li>
+            <li>- Réinitialiser les connexions MFA</li>
+            <li>- Rédiger et escalader les incidents et demandes de niveau 0</li>
+            </ul>
+    </div>
+
+    <div id="missions-3" style="display:none;">
+        <h3>Missions :</h3>
+        <ul>
+            <li>- Réceptionner le matériel avec l'équipe Logistique</li>
+            <li>- Identifier et référencer le matériel </li>
+            <li>- Déployer les masters clients sur les postes de travail (Desktop / Laptop)</li>
+            <li>- Contrôler le bon fonctionnement du matériel et du déploiement</li>
+            <li>- Nettoyer les postes (suppression de master)</li>
+            <li>- Préparer et paramétrer les téléphones professionnels (Coller le verre trempée / paramétrer une ESIM)</li>
+            <li>- Préparer et conditionner les commandes de matériel avant expédition chez les clients</li>
+        </ul>
+    </div>
+</section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EXPERIENCES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CERTIFICATIONS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                        <section id="certifications">
+                            <h2 id="s1">Certifications</h2>
+                            <div class="certif-container">
+                                <div class="certif-item">
+                                    <img src="images/pix.png" alt="Logo pix">
+                                    <p>PIX - 2023</p>
+                                </div>
+
+                                <div class="certif-item">
+                                    <img src="images/cnil.webp" alt="Logo Certif 2">
+                                    <p>MOOC RGPD - 2026</p>
+                                </div>
+
+                                <div class="certif-item">
+                                    <img src="images/anssi.jfif" alt="Logo Certif 3">
+                                    <p>MOOC de l'ANSSI - 2026</p>
+                                </div>
+
+                                <div class="certif-item">
+                                    <img src="images/cisco.png" alt="Logo Certif 3">
+                                    <p>CISCO Technicien Réseau - En cours</p>
+                                </div>
+
+                            </div>
+                        </section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CERTIFICATIONS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~COMPETENCES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <section id="competences">
+                            <h2 id="s1">Compétences</h2>
+
+                            <section class="skills-section">
+    
+    <div class="skills-grid">
+        <div class="skill-card">
+            <div class="skill-header">
+                <span>💻</span>
+                <h3>Langages</h3>
+            </div>
+            <ul>
+                <li>HTML5 / CSS3</li>
+                <li>Bash</li>
+                <li>Powershell</li>
+                <li>PHP (Notions)</li>
+                <li>JavaScript (Notions)</li>
+                <li>SQL (Notions)</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-header">
+                <span>⚙️</span>
+                <h3>Logiciels</h3>
+            </div>
+            <ul>
+                <li>Wireshark</li>
+                <li>VMware</li>
+                <li>Zabbix</li>
+                <li>Putty</li>
+                <li>Cisco Packet Tracer</li>
+                <li>Veeam</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-header">
+                <span>💿</span>
+                <h3>OS</h3>
+            </div>
+            <ul>
+                <li>Windows 7/8/10/11</li>
+                <li>Windows Server 2012-2025</li>
+                <li>Ubuntu</li>
+                <li>Debian</li>
+                <li>Mint</li>
+                <li>MacOS High Sierra</li>
+            </ul>
+        </div>
+    </div>
+</section>
+                        </section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~COMPETENCES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~PROJETS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <section id="projet">
+  <h2 id="s1">Projets</h2>
+  <section class="portfolio">
+
+    <div class="carousel-container">
+      <button class="nav-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+
+      <div class="carousel" id="projectCarousel">
+        <div class="card" style="background-image: url('images/baie.webp');" 
+             onclick="openPopup('Architecture Réseau', 'L’objectif de ce projet était d’effectuer la mise en place complète d’une infrastructure virtualisée sur une base VMware. Cette infrastructure devait ressembler à celle de notre entreprise ou à celle d’une entreprise que l’on aurait imaginée. Dans cette infrastructure, il devait y avoir la mise en place de 2 « mini projet » que l’on devait présenter au jury, en fonction de ces « mini projet » nous étions amené à apporter des modifications à ces « mini projet » lors de l’épreuve.', 'projet-1.html')">
+          <div class="card-overlay">
+            <h3>Architecture Réseau</h3>
+          </div>
+        </div>
+
+        <div class="card" style="background-image: url('images/vscode.png');" 
+             onclick="openPopup('Portfolio', 'Pour obtenir le BTS SIO option SISR, il y a une épreuve de présentation de portfolio pour y développer mes compétences, mes projets, ainsi que mon parcours au jury. J’ai donc dû mettre en place un portfolio pour y démontrer tous ces éléments. Récemment, j’ai également pris l’initiative de revenir sur le portfolio pour le coder en HTML / CSS à la place de le façonner avec Wix.', 'projet-portfolio.html')">
+          <div class="card-overlay">
+            <h3>Portfolio</h3>
+          </div>
+        </div>  
+
+        <div class="card" style="background-image: url('images/obs.png');" 
+             onclick="openPopup('Documentation Vidéo', 'Lors de mon alternance de 2 ans chez U TECH durant mon BTS, j’étais à la tête d’un projet qui était d’effectuer la mise en place de documenation vidéo à destination des utilisateurs magasins que ce soit sur la partie matériel (Ordinateurs / Imprimantes / Terminaux Mobiles) ou sur la partie logiciel (Applications métiers / Outil Windows / Logiciels prestataire)', 'projet-web.html')">
+          <div class="card-overlay">
+            <h3>Documentation Vidéo</h3>
+          </div>
+        </div>
+
+        <div class="card" style="background-image: url('images/image2.jpg');" 
+             onclick="openPopup('Projet 2', 'Ceci est la description détaillée du projet 2.', 'projet-2.html')">
+          <div class="card-overlay">
+            <h3>Alternance ENI</h3>
+          </div>
+        </div>
+      </div>
+
+      <button class="nav-btn right" onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <div id="popup" class="popup-overlay">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h2 id="popupTitle">Titre du Projet</h2>
+      <div id="popupDesc">Description...</div> <a id="popupLink" href="#" class="btn-voir-plus">Voir plus</a>
+    </div>
+  </div>
+</section> 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~PROJETS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+    </main>
+    
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<footer class="footer-container">
+    <div class="footer-back-to-top">
+        <a href="#top" title="Remonter en haut">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <div class="footer-copyright">
+        © 2026 Gabriel Bodet-Denis
+    </div>
+    
+    <div class="footer-contact">
+        <span>Contact :</span>
+        <a href="https://www.linkedin.com/in/gabriel-bodet-denis/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:gabrielbdtpro@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+</footer>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
