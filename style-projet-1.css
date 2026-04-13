@@ -1,0 +1,336 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: bold;
+}
+
+header p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~BODY~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+body a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #666666;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+li {
+    margin: 0 15px;
+}
+
+nav {
+    background-color: #444;
+    height: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2#BVN {
+    color: black;
+    text-align: center;
+    font-family: 'Poppins'sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.accueil {
+    text-align: left;
+}
+
+h2#s1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+body {
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+main {
+    background-color: white;
+    padding: 2em;
+    max-width: 1375px;
+    margin: auto;
+}
+
+
+
+#accueil {
+    padding-bottom: 30px;
+}
+
+#formations {
+    padding-bottom: 30px;
+}
+
+#experiences {
+    padding-bottom: 30px;
+}
+
+#certifications {
+    padding-bottom: 30px;
+}
+
+#competences {
+    padding-bottom: 30px;
+}
+
+#projet {
+    padding-bottom: 30px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1#titre {
+    color: black;
+    text-align: center;
+    font-family: 'Poppins'sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~BODY~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SCHEMA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Conteneur pour tout aligner au centre */
+.conteneur-global {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.schema-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 5px; /* Espace entre le schéma et la case */
+}
+
+/* Voici la case spécifique que tu as demandée */
+.case-style {
+  /* 1. Ajustement automatique à la longueur du texte */
+  display: inline-block;
+  width: fit-content;
+  margin: 0 auto;
+
+  /* 2. Style visuel (Coins arrondis et bordure) */
+  background-color: #f4f4f4;
+  border: 1px solid #666666; /* Bordure grise claire et fine */
+  border-radius: 10px;        /* Coins bien arrondis */
+  padding: 8px 20px;         /* Espace interne pour que le texte respire */
+  
+
+  /* 3. Ombre portée (Shadow) pour l'effet de relief */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* 4. Typographie */
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SCHEMA~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESCRIPTIF~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Style global et police */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+}
+
+.projet-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* CARTE PRINCIPALE */
+.carte-projet {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+  border-left: 6px solid #444; /* Rappel du bleu de ton schéma */
+}
+
+.carte-projet h2 {
+  margin-top: 0;
+  color: #444;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DESCRIPTIF~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ANNEXES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* GRILLE DES ANNEXES */
+.annexes-grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* Les cartes passent à la ligne si pas assez de place */
+  justify-content: center;
+}
+
+/* PETITES CARTES PDF */
+.carte-annexe {
+  background: white;
+  text-decoration: none; /* Enlève le souligné du lien */
+  color: #333;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* EFFET AU SURVOL (Hover) */
+.carte-annexe:hover {
+  transform: translateY(-3px); /* La carte monte un peu */
+  border-color: #1a3a6d;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  background-color: #f0f4f8;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.titre-pdf {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+
+.pdf-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px; /* Espace entre l'icône et le nom du fichier */
+  transition: transform 0.2s ease;
+}
+
+/* Petit effet sympa : l'icône bouge quand on survole la carte */
+.carte-annexe:hover .pdf-icon {
+  transform: scale(1.1);
+}   
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ANNEXES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* On donne une largeur égale aux blocs de gauche et droite pour centrer le milieu */
+.footer-back-to-top, .footer-contact {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+}
+
+.footer-back-to-top {
+    justify-content: flex-start;
+}
+
+.footer-contact {
+    justify-content: flex-end;
+    gap: 15px; /* Espace entre "Contact :" et les icônes */
+}
+
+.footer-copyright {
+    flex: 2; /* Le nom prend l'espace central */
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Style commun pour toutes les icônes du footer */
+.footer-container i {
+    font-size: 1.4rem; /* On s'assure qu'elles soient bien visibles */
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* Effets au survol */
+.footer-container a:hover i {
+    transform: translateY(-3px);
+}
+
+.fa-linkedin:hover { color: #0077b5 !important; }
+.fa-envelope:hover { color: #666666 !important; }
+.fa-arrow-up:hover { color: #666666!important; }
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
