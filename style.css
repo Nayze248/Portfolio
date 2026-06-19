@@ -29,18 +29,24 @@ header p {
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~BODY~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-/* Body */
+body {
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
 
 body a {
     color: white;
     text-decoration: none;
+}
+
+nav {
+    background-color: #444;
+    height: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav a:hover {
@@ -59,19 +65,10 @@ li {
     margin: 0 15px;
 }
 
-
-nav {
-    background-color: #444;
-    height: 3.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 h2#BVN {
     color: black;
     text-align: center;
-    font-family: 'Poppins'sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 2.5rem;
 }
@@ -86,11 +83,6 @@ h2#s1 {
     margin-bottom: 15px;
 }
 
-body {
-    background-color: #f4f4f4;
-    overflow-x: hidden;
-}
-
 main {
     background-color: white;
     padding: 2em;
@@ -98,41 +90,13 @@ main {
     margin: auto;
 }
 
-
-
-#accueil {
+#accueil, #formations, #experiences, #certifications, #competences, #projet {
     padding-bottom: 30px;
 }
-
-#formations {
-    padding-bottom: 30px;
-}
-
-#experiences {
-    padding-bottom: 30px;
-}
-
-#certifications {
-    padding-bottom: 30px;
-}
-
-#competences {
-    padding-bottom: 30px;
-}
-
-#projet {
-    padding-bottom: 30px;
-}
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~BODY~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ACCUEIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-/* Style de base */
 .about-section {
     padding: 60px 20px;
     background-color: #f9f9f9;
@@ -142,27 +106,25 @@ main {
     max-width: 85%;
     margin: 0 auto;
     display: flex;
-    align-items: center; /* Aligne verticalement au centre */
-    gap: 50px;           /* Espace entre la photo et le texte */
-    flex-wrap: wrap;     /* Permet de passer à la ligne sur mobile */
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
-/* Style de l'image */
 .about-image {
-    flex: 1;             /* Prend une part égale de l'espace */
-    min-width: 300px;    /* Largeur minimum avant de passer à la ligne */
+    flex: 1;
+    min-width: 300px;
 }
 
 .about-image img {
     width: 100%;
     height: auto;
-    border-radius: 15px; /* Coins arrondis */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Petite ombre portée */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-/* Style du contenu texte */
 .about-content {
-    flex: 1.5;           /* Donne un peu plus d'espace au texte qu'à l'image */
+    flex: 1.5;
     min-width: 300px;
     text-align: justify;
 }
@@ -182,25 +144,23 @@ main {
     list-style: none;
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Liste sur deux colonnes */
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin-top: 20px;
 }
+
 #accueil h4 {
     color: white;
 }
 
-#accueil h2 {
+#accueil h2, #accueil h3 {
     text-align: center;
 }
 
-#accueil h3 {
-    text-align: center;
-}
 .cv-container {
     margin-top: 25px;
-    display: flex;       /* Active le mode flex */
-    justify-content: center; /* Centre horizontalement le bouton */
+    display: flex;
+    justify-content: center;
 }
 
 .btn-cv {
@@ -219,35 +179,21 @@ main {
     background-color: transparent;
     color: #333 !important;
     border-color: #333;
-    transform: translateY(-3px); /* Petit effet de flottement */
+    transform: translateY(-3px);
 }
 
 #accueil ul {
-    /* On s'assure que la liste se comporte comme un bloc vertical */
     display: flex;
     flex-direction: column; 
     align-items: flex-start;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ACCUEIL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FORMATIONS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
 :root {
   --primary-color: #666666;
 }
-
-/* 1. On s'assure que le conteneur laisse un peu d'espace sur les bords pour le hover */
-.timeline-container {
-    padding: 20px 50px; /* Ajoute de la marge interne à gauche et à droite */
-    overflow-x: hidden; /* Empêche le scroll horizontal parasite */
-}
-
-
 
 .timeline {
   display: flex;
@@ -259,11 +205,10 @@ main {
   padding-top: 20px;
 }
 
-/* La ligne horizontale */
 .timeline::before {
   content: '';
   position: absolute;
-  top: 150px; /* Aligné entre la photo et le texte */
+  top: 150px;
   left: 0;
   right: 0;
   height: 4px;
@@ -323,110 +268,96 @@ main {
   color: var(--primary-color);
 }
 
-/* Adaptabilité Mobile */
-@media (max-width: 768px) {
-    .timeline-middle-line { left: 20px; } /* Ligne à gauche */
-    .timeline-row { justify-content: flex-start !important; padding-left: 50px; }
-    .experience-card { width: 90%; } /* Carte large */
-    .timeline-row::before { left: 20px; } /* Point aligné sur la ligne */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EXPERIENCES (CORRIGÉES)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.timeline-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FORMATIONS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EXPERIENCES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Désactivation définitive de l'ancienne ligne globale problématique */
+.timeline-middle-line {
+    display: none !important;
+}
 
-/* Style de la carte */
+/* Chaque bloc génère son morceau de ligne noire */
+.timeline-row {
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 40px; /* Espace entre les cartes */
+}
+
+/* IMPORTANT : On supprime le padding du dernier bloc pour enlever le trou blanc du bas */
+.timeline-row:last-child {
+    padding-bottom: 0;
+}
+
+/* Génération de la ligne noire centrale dynamique */
+.timeline-row::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #333;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Le premier bloc commence la ligne noire pile au niveau de son premier point */
+.timeline-row:first-child::after {
+    top: 30px;
+}
+
+/* IMPORTANT : Le dernier bloc arrête sa ligne noire pile au milieu du dernier point */
+.timeline-row:last-child::after {
+    bottom: auto;
+    height: 30px; 
+}
+
+/* Les points noirs sur la ligne centrale */
+.timeline-row::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    width: 16px;
+    height: 16px;
+    background: #333;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+/* Style et comportements des cartes d'expérience */
 .experience-card {
     background: white;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
     cursor: pointer;
-    transition: 0.3s;
-}
-.experience-card:hover { border-color: #333; background: #f9f9f9; }
-
-/* LE CONTENEUR NOIR (Le patron) */
-.modal {
-    display: none; /* Piloté par le JS, passera en flex */
-    position: fixed;
-    z-index: 999999; /* Devant absolument TOUT */
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.85);
-    
-    justify-content: center; /* Centre horizontalement */
-    align-items: center;     /* Centre verticalement */
-}
-
-/* LE RECTANGLE BLANC (L'esclave) */
-.modal-content {
-    background-color: white;
-    padding: 40px;
-    border-radius: 20px;
-    width: 90%;
-    max-width: 600px;
-    
-    /* ON VIRE TOUT POSITIONNEMENT QUI FAIT CHIER */
-    /* position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    margin: 0 !important;
-    transform: none !important; */
-
-    max-height: 85vh;
-    /* overflow-y: auto; */
-    box-shadow: 0 25px 50px rgba(0,0,0,0.6);
-}
-
-/* On l'applique sur le contenu blanc du popup */
-.modal-content {
-    animation: zoomIn 0.3s ease-out;
-}
-
-/* Alignement des listes dans le modal */
-#modal-text ul {
-    display: block !important;
-    text-align: left;
-    padding-left: 25px;
-}
-#modal-text li {
-    display: list-item !important;
-    margin-top: 15px;
-}
-
-/* Bouton fermer */
-.close-btn {
-    position: absolute;
-    right: 20px; top: 15px;
-    font-size: 24px;
-    cursor: pointer;
-    color: #888;
-}
-
-/* On crée l'animation */
-@keyframes zoomIn {
-    from { transform: scale(0.8); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-}
-
-
-/* 5. Ajustement de la carte pour ne pas toucher la ligne */
-.experience-card {
     width: 42%; 
     z-index: 2;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
 }
 
-/* 6. Le Hover sans débordement */
-.experience-card:hover {
-    transform: scale(1.05); /* Zoom contrôlé */
-    z-index: 10; /* Passe au dessus de tout au survol */
+.experience-card:hover { 
+    border-color: #333; 
+    background: #f9f9f9; 
+    transform: scale(1.05);
+    z-index: 10;
 }
 
 .experience-card h3 {
@@ -442,80 +373,82 @@ main {
     font-weight: 500;
 }
 
-/* Le conteneur global */
-.timeline-container {
-    position: relative;
-    max-width: 1000px; /* Augmente un peu pour respirer */
-    margin: 50px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 40px; /* Ajoute du padding sur les côtés (40px) */
-    box-sizing: border-box; /* Important pour que le padding ne casse pas la largeur */
-}
-
-/* La ligne noire au centre */
-.timeline-middle-line {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background-color: #333;
-    transform: translateX(-50%);
-}
-
-/* 2. On fixe la largeur des lignes pour que le positionnement soit stable */
-.timeline-row {
-    display: flex;
-    width: 100%;
-    margin-bottom: 40px;
-    position: relative;
-    align-items: center;
-}
-
-/* 3. Placement à GAUCHE */
+/* Placement alterné Gauche / Droite */
 .gauche {
-    justify-content: flex-start; /* Aligne le contenu au début (gauche) */
+    justify-content: flex-start;
 }
 .gauche .experience-card {
-    margin-right: auto; /* Pousse vers la ligne centrale */
-    transform-origin: left center; /* Le zoom se fait vers la droite */
+    margin-right: auto;
+    transform-origin: left center;
 }
 
-/* 4. Placement à DROITE */
 .droite {
-    justify-content: flex-end; /* Aligne le contenu à la fin (droite) */
+    justify-content: flex-end;
 }
 .droite .experience-card {
-    margin-left: auto; /* Pousse vers la ligne centrale */
-    transform-origin: right center; /* Le zoom se fait vers la gauche */
+    margin-left: auto;
+    transform-origin: right center;
 }
 
-/* Optionnel : ajouter le petit point sur la ligne */
-.timeline-row::before {
-    content: '';
+/* Fenêtres Modales d'Expérience (Popups) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 85vh;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+    animation: zoomIn 0.3s ease-out;
+}
+
+#modal-text ul {
+    display: block !important;
+    text-align: left;
+    padding-left: 25px;
+}
+#modal-text li {
+    display: list-item !important;
+    margin-top: 15px;
+}
+
+.close-btn {
     position: absolute;
-    left: 50%;
-    top: 30px;
-    width: 16px;
-    height: 16px;
-    background: #333;
-    border-radius: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-}   
+    right: 20px; 
+    top: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+}
 
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
 
+/* Reponsive Mobile Timeline */
+@media (max-width: 768px) {
+    .timeline-row { justify-content: flex-start !important; padding-left: 50px; }
+    .experience-card { width: 90%; }
+    .timeline-row::before, .timeline-row::after { left: 20px; }
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EXPERIENCES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CERTIFICATIONS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Certifications~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
 #certifications {
     padding: 40px 20px;
     text-align: center;
@@ -524,44 +457,36 @@ main {
 .certif-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Aligne les blocs par le haut */
+    align-items: flex-start;
     gap: 40px;
 }
 
 .certif-item {
     display: flex;
     flex-direction: column;
-    align-items: center;    /* Centre l'image et le texte horizontalement l'un par rapport à l'autre */
-    width: 200px;           /* Largeur fixe pour que le texte ne se dédalle pas */
-    text-align: center;     /* Centre le texte à l'intérieur de sa zone */
-
-
-    /* Le rectangle */
-    background-color: #f4f4f4;    /* Fond blanc pour faire ressortir le logo */
-    border: 2px solid #EEEEEE;    /* La bordure grise que tu as demandée */
-    border-radius: 12px;          /* Arrondi des angles pour un look moderne */
-    padding: 20px;                /* Espace entre le contenu et les bords du rectangle */
-    
-    /* Optionnel : une petite ombre pour donner du relief */
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border: 2px solid #EEEEEE;
+    border-radius: 12px;
+    padding: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    
-    /* Pour que l'agrandissement au hover reste propre */
     transition: transform 0.3s ease;
 }
 
 .certif-item img {
-    height: 100px;         /* Toutes les images feront 100px de haut */
-    width: auto;           /* La largeur s'adapte pour ne pas déformer */
-    object-fit: contain;   /* L'image est "rangée" proprement dans ses 100px */
+    height: 100px;
+    width: auto;
+    object-fit: contain;
     display: block;
     margin-bottom: 15px;
     transition: transform 0.3s ease;
 }
 
 .certif-item img:hover {
-    transform: scale(1.1);  /* Petit effet d'agrandissement */
-    transform: translateY(-5px); /* La carte monte légèrement */
-    border-color: #E0E0E0;       /* La bordure devient un peu plus foncée */
+    transform: scale(1.1) translateY(-5px);
+    border-color: #E0E0E0;
 }
 
 .certif-item p {
@@ -569,18 +494,13 @@ main {
     font-size: 14px;
     color: #2C3E50;
     font-weight: 500;
-    margin-top: 10px;       /* Espace constant sous l'image */
-    width: 100%;            /* Le texte occupe toute la largeur du bloc */
+    margin-top: 10px;
+    width: 100%;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Certifications~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~COMPETENCES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
 .skills-section {
     padding: 50px 20px;
     max-width: 1100px;
@@ -594,27 +514,24 @@ main {
     position: relative;
 }
 
-/* La Grille */
 .skills-grid {
     display: grid;
-    /* 'auto-fit' va ajuster le nombre de colonnes selon la largeur de l'écran */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
     gap: 20px;
     width: 100%;
 }
 
-/* Style des Cartes */
 .skill-card {
     background: #ffffff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     transition: transform 0.3s ease;
-    text-align: left; /* Aligne le contenu à gauche pour la liste */
+    text-align: left;
 }
 
 .skill-card:hover {
-    transform: translateY(-5px); /* Petit effet de levage au survol */
+    transform: translateY(-5px);
 }
 
 .skill-header {
@@ -639,11 +556,10 @@ main {
     list-style: none;
     padding: 0;
     margin: 0;
-    /* On s'assure que la liste se comporte comme un bloc vertical */
     display: flex;
     flex-direction: column; 
     align-items: flex-start;
-    width: 100%; /* Force la liste à prendre toute la largeur de la carte */
+    width: 100%;
 }
 
 .skill-card li {
@@ -651,21 +567,15 @@ main {
     color: #555;
     font-size: 0.95rem;
     border-bottom: 1px solid #f0f0f0;
-    width: 100%; /* Force chaque ligne à prendre toute la largeur */
-    
-    /* Sécurité pour les mots très longs */
+    width: 100%;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    white-space: normal; /* Autorise le retour à la ligne */
+    white-space: normal;
 }
 
 .skill-card li:last-child {
     border-bottom: none;
 }
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~COMPETENCES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~PROJETS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
@@ -712,7 +622,6 @@ main {
   border-radius: 0 0 15px 15px;
 }
 
-/* Style des boutons de navigation */
 .nav-btn {
   background: rgba(0,0,0,0.5);
   color: white;
@@ -725,9 +634,8 @@ main {
 .left { left: -50px; }
 .right { right: -50px; }
 
-/* Popup (Masqué par défaut) */
 .popup-overlay {
-  display: none; /* Changé dynamiquement en 'flex' par le JS */
+  display: none;
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
@@ -744,25 +652,23 @@ main {
   max-width: 500px;
   text-align: center;
   position: relative;
-  color: #333; /* Texte plus sombre pour lisibilité sur fond blanc */
+  color: #333;
 }
 
-/* Style spécifique pour la description (listes, etc.) */
 #popupDesc {
-  text-align: justify; /* Meilleure lecture pour les descriptions */
+  text-align: justify;
   margin: 15px 0;
   line-height: 1.5;
 }
 
-/* --- LE NOUVEAU BOUTON VOIR PLUS --- */
 .btn-voir-plus {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 25px;
-  background-color: #333; /* Bleu moderne */
-  color: white !important; /* Force la couleur blanche */
+  background-color: #333;
+  color: white !important;
   text-decoration: none;
-  border-radius: 25px; /* Look arrondi plus moderne */
+  border-radius: 25px;
   font-weight: bold;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -770,26 +676,13 @@ main {
 
 .btn-voir-plus:hover {
   background-color: #333;
-  transform: translateY(-2px); /* Petit effet de levée au survol */
+  transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
-
-.close-btn {
-  position: absolute;
-  top: 10px; right: 20px;
-  font-size: 30px;
-  cursor: pointer;
-  color: #333;
-}
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~PROJETS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -801,7 +694,6 @@ main {
     box-sizing: border-box;
 }
 
-/* On donne une largeur égale aux blocs de gauche et droite pour centrer le milieu */
 .footer-back-to-top, .footer-contact {
     flex: 1; 
     display: flex;
@@ -814,31 +706,25 @@ main {
 
 .footer-contact {
     justify-content: flex-end;
-    gap: 15px; /* Espace entre "Contact :" et les icônes */
+    gap: 15px;
 }
 
 .footer-copyright {
-    flex: 2; /* Le nom prend l'espace central */
+    flex: 2;
     text-align: center;
     font-weight: 500;
 }
 
-/* Style commun pour toutes les icônes du footer */
 .footer-container i {
-    font-size: 1.4rem; /* On s'assure qu'elles soient bien visibles */
+    font-size: 1.4rem;
     color: white;
     transition: all 0.3s ease;
 }
 
-/* Effets au survol */
 .footer-container a:hover i {
     transform: translateY(-3px);
 }
 
 .fa-linkedin:hover { color: #0077b5 !important; }
 .fa-envelope:hover { color: #666666 !important; }
-.fa-arrow-up:hover { color: #666666!important; }
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.fa-arrow-up:hover { color: #666666 !important; }
